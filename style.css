@@ -1,39 +1,118 @@
-*{
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    max-width: 100%;
+body {
+    background-color: rgb(214, 229, 235);
+    display:flex;
+    justify-content:center;
+    align-items: center;
     min-height: 100vh;
+    flex-wrap: wrap;
 }
-nav{
-    max-width: 100%;
-height: 70px;
-background-color: rgb(192, 189, 189);
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 50px;
-}
-ul{
+.letter {
     display: flex;
-    gap: 280px;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10%;
+    margin: 2px;
+ visibility: hidden;
+}
+.doton {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 2px;
+}
+/*.grid-container{
+    display: grid;
+    grid-template-columns: 3 ,1fr;
+    width: 100%;
+height: 100vh;
+gap: 20px;
+align-items: center;
+grid-template-rows: auto;
+grid-template-areas: 
+"box1""box1""box1"
+"box2""box2""box2"
+"box3""box3""box3";
+}
+.box1{
+    grid-area: box1;
+    background: orangered;
+}
+.box2{
+    grid-area: box2;
+    background-color: rgb(192, 172, 172);
+}
+.box3{
+    grid-area: box3;
+    background: yellowgreen;
+}
+/*.grid-container div{
+    background: rgb(184, 29, 29);
+    height: 200px;
+}
+.grid-container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 26% 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "nav nav""aside main""aside footer";
+}
+.grid-container:9(nav,aside,main,footer){
+    border: radius 1px solid;
 }
 
-.logo{
-    font-size: 2rem;
-    font-weight: bolder;
+aside{
+    grid-area: aside ;
 }
-a{
-    text-decoration: none;
-    list-style: none;
-    font-size: 1.5;
+nav{
+    grid-area: nav; background: limegreen;
+    /*padding-block:10px; */
 }
-a :hover{
-color: red;
+main{
+    grid-area: main;
+    background: pink;
 }
-.container{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
